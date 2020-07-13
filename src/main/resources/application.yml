@@ -1,0 +1,22 @@
+#端口
+server:
+  port: 8080
+# 图片服务器 minio配置
+minio:
+  ip: localhost:9000
+  # minio登录账号密码
+  accessKey: minio
+  secretKey: zxh_minio
+
+  ## 桶名（文件夹）命名规则要符合 亚马逊S3标准 详情可看http://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html
+  bucketName:
+    ## 照片文件夹
+    facility: facility-photos
+
+spring:
+  minio:
+    url: http://localhost:9000/
+    access-key: minio
+    secret-key: zxh_minio
+    bucket: zxh_minio
+    create-bucket: true
